@@ -11,15 +11,21 @@ var Routes = routing.Routes{
 		HandlerFunc: Index,
 	},
 	routing.Route{
-		Name:        "TodoIndex",
+		Name:        "List",
 		Method:      "GET",
 		Pattern:     "/todos",
 		HandlerFunc: List,
 	},
 	routing.Route{
-		Name:        "TodoShow",
+		Name:        "Show",
 		Method:      "GET",
 		Pattern:     "/todos/{todoId}",
 		HandlerFunc: Show,
+	},
+	routing.Route{
+		Name:        "Make",
+		Method:      "POST",
+		Pattern:     "/todos",
+		HandlerFunc: Make,
 	},
 }

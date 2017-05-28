@@ -1,5 +1,3 @@
-.vscode/
-
 # Binaries for programs and plugins
 *.exe
 *.dll
@@ -14,3 +12,9 @@
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
+
+# IDE specific files
+.vscode/
+
+# Debugger artifacts
+debug
