@@ -1,10 +1,11 @@
 package main
 
 import (
-	"Sandy987/go-api-exercise/routing"
-	"Sandy987/go-api-exercise/todo"
 	"log"
 	"net/http"
+
+	"github.com/Sandy987/go-api-exercise/routing"
+	"github.com/Sandy987/go-api-exercise/todo"
 )
 
 func main() {

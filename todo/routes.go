@@ -1,6 +1,6 @@
 package todo
 
-import "Sandy987/go-api-exercise/routing"
+import "github.com/Sandy987/go-api-exercise/routing"
 
 // Routes contains all potential handlers for the Todo module
 var Routes = routing.Routes{
