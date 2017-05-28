@@ -67,3 +67,20 @@ func Make(w http.ResponseWriter, r *http.Request) {
 		panic(err)
 	}
 }
+
+// Delete removes a TODO using an ID
+func Delete(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	todoID, converr := strconv.Atoi(vars["todoId"])
+	if converr != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	err := DeleteTodo(todoID)
+	if err != nil {
+		panic(err)
+	}
+
+	w.WriteHeader(http.StatusOK)
+}

@@ -28,4 +28,10 @@ var Routes = routing.Routes{
 		Pattern:     "/todos",
 		HandlerFunc: Make,
 	},
+	routing.Route{
+		Name:        "Delete",
+		Method:      "DELETE",
+		Pattern:     "todos/{todoId}",
+		HandlerFunc: Delete,
+	},
 }
